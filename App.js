@@ -33,7 +33,7 @@ export default class App extends Component<Props> {
     }
   }
 
-  codePushSync() { 
+  codePushSync() {
 
     this.setState({
       logs: ['Started at ' + new Date().getTime()]
@@ -41,7 +41,7 @@ export default class App extends Component<Props> {
 
     CodePush.sync({
       updateDialog: true,
-      installMode : CodePush.installMode.IMMEDIATE
+      installMode : CodePush.InstallMode.IMMEDIATE
     }, (status) => { 
       for (var key in CodePush.SyncStatus) { 
         if (status === CodePush.SyncStatus[key]) { 
