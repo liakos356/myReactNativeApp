@@ -61,8 +61,8 @@ export default class App extends Component<Props> {
         <Text style={styles.welcome}>Welcome liakos to React Native!</Text>
         <Button title="Code Push" onPress={() => { 
           this.codePushSync();
-        }}>
-          <Text>{JSON.stringify(this.state.logs)}</Text>
+        }}/>
+        <Text>{JSON.stringify(this.state.logs)}</Text>
       </View>
     );
   }
