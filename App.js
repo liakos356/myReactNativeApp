@@ -58,8 +58,7 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome liakos to React Native!</Text>
-        <Text style={styles.welcome}>added with code push</Text>
+        <Text style={styles.welcome}>Please work</Text>
         <Button title="Code Push" onPress={() => { 
           this.codePushSync();
         }}/>
@@ -74,7 +73,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: 'red',
   },
   welcome: {
     fontSize: 20,
